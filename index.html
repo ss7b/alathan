@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اوقات الصلاة</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div class="city-date">
+                <h1 class="cityname">مكة المكرمة</h1>
+                <p>توقيت مواعيد الصلاة في <span class="cityname"></span> حسب الوقت المحلي</p>
+                <p>
+                    <span id="weekday"></span>
+                    <span id="day"></span>
+                    <span id="month">جمادي الاخر</span>
+                    <span id="year">1444</span>
+                </p>
+                <div>
+                    <select id="city">
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div>
+            <!-- <h2>
+                الظهر بعد 
+            <span>
+                <span id="sec"></span>:
+                <span id="min"></span>:
+                <span id="hours"></span>
+            </span>
+            </h2> -->
+            <table>
+                <tr class="">
+                    <td>الفجر</td>
+                    <td id="fajr">05:30 ص</td>
+                </tr>
+                <tr>
+                    <td>الشروق</td>
+                    <td id="sunrise">05:30 ص</td>
+                </tr>
+                <tr>
+                    <td>الظهر</td>
+                    <td id="dhuhr">05:30 م</td>
+                </tr>
+                <tr>
+                    <td>العصر</td>
+                    <td id="asr">05:30 م</td>
+                </tr>
+                <tr>
+                    <td>المغرب</td>
+                    <td id="maghrib">05:30 م</td>
+                </tr>
+                <tr>
+                    <td>العشاء</td>
+                    <td id="isaha">05:30 م</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

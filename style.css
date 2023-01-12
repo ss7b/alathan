@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap");
+:root{
+    --yellow-color: #efd000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  background: rgb(2, 0, 38);
+  background: linear-gradient(
+    131deg,
+    rgba(2, 0, 38, 1) 0%,
+    rgba(0, 2, 54, 1) 0%,
+    rgba(27, 53, 101, 1) 27%,
+    rgba(50, 79, 126, 1) 49%,
+    rgba(27, 53, 101, 1) 69%,
+    rgba(0, 2, 54, 1) 95%
+  );
+  min-height: 100vh;
+  direction: rtl;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.container div {
+  max-width: 50%;
+  flex: 0 0 50%;
+}
+.container div:first-child  .city-date{
+    max-width: 100%;
+}
+.container div:first-child  .city-date h1{
+    color: var(--yellow-color);
+}
+.container div:first-child  .city-date p:nth-of-type(2){
+    margin: 15px 0 50px;
+}
+.container > div:last-child{
+    text-align: center;
+}
+.container div:last-child h2,
+table{
+    background: rgb(15 30 80 / 20%);
+    padding: 20px;
+    border-radius: 10px;
+}
+.container div:last-child h2{
+    margin-bottom: 20px;
+}
+.container div:last-child h2 span{
+    margin-right: 10px;
+}
+table{
+    width: 100%;
+}
+tr.active > td{
+    color: var(--yellow-color);
+}
+td{
+    padding-bottom:10px ;
+    font-size: 20px;
+    text-align: center;
+}
+select{
+    background: transparent;
+    padding: 10px;
+    color: #fff;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 25px;
+  font-family: "Cairo", sans-serif;
+}
+select:focus{
+    outline: none;
+}
+option {
+    background: #102052;
+}
+/* responsive */
+@media (max-width: 767px) {
+    body{
+        display: block;
+    }
+    .container{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .container div {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .container div:first-child {
+        padding:30px 0;
+    }
+    .container div:first-child  .city-date p:nth-of-type(1){
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}
