@@ -102,11 +102,14 @@ option {
         max-width: 100%;
         flex: 0 0 100%;
     }
-    .container div:first-child {
-        padding:30px 0;
+    .container > div:last-child{
+        margin-top: 30px;
     }
     .container div:first-child  .city-date p:nth-of-type(1){
         font-size: 15px;
         margin-top: 10px;
+    }
+    .container div:first-child  .city-date p:nth-of-type(2){
+        margin-bottom: 30px;
     }
 }
